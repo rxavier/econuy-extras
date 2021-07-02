@@ -1,0 +1,26 @@
+name: taxes_pdf
+on:
+  schedule:
+    - cron: "0 0 * * *" #runs at 00:00 UTC everyday
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: Install camelot deps
+        run: sudo apt install ghostscript python3-tk
+      - name: Install pipenv
+        run: pip install pipenv
+      - name: Activate env
+        run: pipenv shell
+      - name: Install Python deps
+        run: pipenv install
+      - name: Run script
+        run: python econuy_extras/retrieval/taxes_pdf.py
