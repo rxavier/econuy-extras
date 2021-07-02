@@ -21,6 +21,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Remove file
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: /econuy_extras/retrieval/taxes_pdf.csv
       - name: Run script
         run: python econuy_extras/retrieval/taxes_pdf.py
       - name: Add, commit and push
