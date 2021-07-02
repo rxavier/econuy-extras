@@ -21,5 +21,7 @@ jobs:
         run: pip install pipenv
       - name: Install Python deps
         run: pipenv install
+      - name: Install own module
+        run: pipenv run pip install -e .
       - name: Run script
         run: pipenv run python econuy_extras/retrieval/taxes_pdf.py
