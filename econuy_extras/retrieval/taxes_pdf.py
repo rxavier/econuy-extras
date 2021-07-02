@@ -11,8 +11,6 @@ import camelot
 from PyPDF2 import pdf as pdf2
 from PyPDF2.utils import PdfReadWarning
 
-from econuy_extras import get_project_root
-
 
 def get_taxes_from_pdf(start_year: int = 2020) -> pd.DataFrame:
     base_url = "https://www.dgi.gub.uy/wdgi/page?2,principal,dgi--datos-y-series-estadisticas--informes-mensuales-de-la-recaudacion-"
