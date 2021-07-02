@@ -25,3 +25,14 @@ jobs:
         run: pipenv run pip install -e .
       - name: Run script
         run: pipenv run python econuy_extras/retrieval/taxes_pdf.py
+      - name: Commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Update taxes" -a
+      - name: Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main  
