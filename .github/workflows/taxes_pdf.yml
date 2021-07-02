@@ -19,8 +19,6 @@ jobs:
         run: sudo apt install ghostscript python3-tk
       - name: Install pipenv
         run: pip install pipenv
-      - name: Activate env
-        run: pipenv shell
       - name: Install Python deps
         run: pipenv install
       - name: Run script
