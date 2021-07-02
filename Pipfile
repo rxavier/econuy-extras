@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+camelot-py = {extras = ["cv"], version = "*"}
+pandas = "*"
+requests = "*"
+
+[dev-packages]
+jupyter = "*"
+
+[requires]
+python_version = "3.7"
