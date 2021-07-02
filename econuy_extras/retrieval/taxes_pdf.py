@@ -73,7 +73,7 @@ def get_taxes_from_pdf(start_year: int = 2020) -> pd.DataFrame:
                     'Recaudación Total de la DGI']
                 data.append(table)
     output = pd.concat(data)
-    output.to_csv("econuy_extras/retrieval/taxes.csv")
+    output.to_csv("econuy_extras/retrieval/taxes_pdf.csv")
 
     return output
 
