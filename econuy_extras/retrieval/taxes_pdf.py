@@ -3,7 +3,6 @@ import warnings
 import re
 import sys
 from tempfile import NamedTemporaryFile
-from pathlib import Path
 
 import pandas as pd
 import requests
@@ -74,7 +73,7 @@ def get_taxes_from_pdf(start_year: int = 2020) -> pd.DataFrame:
                     'Recaudación Total de la DGI']
                 data.append(table)
     output = pd.concat(data)
-    output.to_csv(Path("econuy_extras", "retrieval", "taxes.csv"))
+    output.to_csv("taxes.csv")
 
     return output
 
