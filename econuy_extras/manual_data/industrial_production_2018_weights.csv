@@ -1,0 +1,121 @@
+﻿Sección,División,Grupo,"Agrupación
+/ Clase",Denominación,División,Grupo,"Agrupación
+/ Clase"
+C,0,0,0,Total de la industria manufacturera,100,100,100
+C,10,0,0,Elaboración de productos alimenticios,38.21,0,0
+C,10,101,0,Procesamiento y conservación de carne,0,11.18,0
+C,10,101,1011,Matanza de ganado y otros animales (excepto aves) conservación y preparación de sus carnes,0,0,8.56
+C,10,101,1012,Elaboración de fiambres y chacinados,0,0,1.87
+C,10,101,1013,"Matanza, preparación y conservación de pollos y gallinas",0,0,0.74
+C,10,102,0,"Procesamiento y conservación de pescados, crustáceos y moluscos",0,0.45,0
+C,10,102,1020,"Procesamiento y conservación de pescados, crustáceos y moluscos",0,0,0.45
+C,10,103,0,Procesamiento y conservación de frutas y vegetales,0,0.82,0
+C,10,103,1030,Procesamiento y conservación de frutas y vegetales,0,0,0.82
+C,10,104,0,Elaboración de aceites y grasas de origen vegetal y animal,0,0.96,0
+C,10,104,1040,Elaboración de aceites y grasas de origen vegetal y animal,0,0,0.96
+C,10,105,0,Elaboración de productos lácteos,0,5.65,0
+C,10,105,1050,Elaboración de productos lácteos,0,0,5.65
+C,10,106,0,"Elaboración de productos de molinería, almidones y productos derivados del almidón",0,3.19,0
+C,10,106,106A,"Elaboración de harina de trigo y otros productos derivados de la molienda de trigo; elaboración de otros productos de molinería de cereales, excepto del arroz y trigo",0,0,0.96
+C,10,106,106B,Elaboración de productos de molinería de arroz y elaboración de aceite de arroz,0,0,2.23
+C,10,107,0,Elaboración de otros productos alimenticios,0,15.03,0
+C,10,107,1071,Elaboración de productos de panadería,0,0,3.83
+C,10,107,107A,"Elaboración de azúcar, cacao, chocolate y confites",0,0,0.35
+C,10,107,1074,"Elaboración de pastas, fideos",0,0,0.95
+C,10,107,107B,Elaboración de comidas y platos preparados; elaboración de otros productos alimenticios,0,0,9.91
+C,10,108,0,Elaboración de alimentos preparados para animales,0,0.94,0
+C,10,108,1080,Elaboración de alimentos preparados para animales,0,0,0.94
+C,11,0,0,Elaboración de bebidas,6.56,0,0
+C,11,110,,Elaboración de bebidas,0,6.56,0
+C,11,110,110A,"Destilación, rectificación y mezcla de bebidas alcohólicas; elaboración de vinos",0,0,0.94
+C,11,110,1103,Elaboración de bebidas malteadas y de malta,0,0,2.67
+C,11,110,1104,Elaboración de bebidas no alcohólicas; producción de aguas minerales y otras aguas embotelladas,0,0,2.95
+C,12,0,0,Elaboración de productos de tabaco,1.36,0,0
+C,12,120,0,Elaboración de productos de tabaco,0,1.36,0
+C,12,120,1200,Elaboración de productos de tabaco,0,0,1.36
+C,13,0,0,Fabricación de productos textiles,1.22,0,0
+C,13,131,0,"Hilandería, tejedura y acabados de productos textiles",0,0.67,0
+C,13,131,131A,"Hilandería, tejedura y acabados de productos textiles",0,0,0.67
+C,13,139,0,Fabricación de otros productos textiles,0,0.55,0
+C,13,139,139A,Fabricación de otros productos textiles,0,0,0.55
+C,14,0,0,Fabricación de prendas de vestir,0.82,0,0
+C,14,14A,0,Fabricación de prendas de vestir,0,0.82,0
+C,14,14A,14AA,Fabricación de prendas de vestir,0,0,0.82
+C,15,0,0,Fabricación de cueros y productos conexos,2,0,0
+C,15,15A,0,Fabricación de cueros y productos conexos,0,2,0
+C,15,15A,15AA,Fabricación de cueros y productos conexos,0,0,2
+C,16,0,0,Prod. de madera y fab. de productos de madera excepto muebles,1.93,0,0
+C,16,161,0,Aserrado y acepilladura de madera,0,1.36,0
+C,16,161,1610,Aserrado y acepilladura de madera,0,0,1.36
+C,16,162,0,"Fabricación de productos de madera, corcho, paja y materiales trenzables",0,0.58,0
+C,16,162,162A,"Fabricación de productos de madera, corcho, paja y materiales trenzables",0,0,0.58
+C,17,0,0,Fabricación de papel y de los productos de papel,10.57,0,0
+C,17,170,0,Fabricación de papel y de los productos de papel,0,10.57,0
+C,17,170,1701,"Fabricación de pasta de celulosa, papel y cartón",0,0,9.07
+C,17,170,1702,Fabricación del papel  y cartón ondulado y de envases de papel y cartón,0,0,0.66
+C,17,170,1709,Fabricación de otros artículos del papel y cartón n.c.p.,0,0,0.83
+C,18,0,0,Actividades de impresión y reproducción de grabaciones,1.72,0,0
+C,18,181,0,Actividades de impresión y servicios conexos,0,1.72,0
+C,18,181,181A,Actividades de impresión y servicios conexos,0,0,1.72
+C,19,0,0,Fabricación de coque y de productos de la refinación del petróleo,6.12,0,0
+C,19,192,0,Fabricación de los productos de la refinación del petróleo,0,6.12,0
+C,19,192,1920,Fabricación de los productos de la refinación del petróleo,0,0,6.12
+C,20,0,0,Fabricación de sustancias y productos químicos,6.74,0,0
+C,20,201,0,"Fabricación de sustancias químicas básicas, abonos y compuestos de nitrógeno, plásticos y caucho sintético en formas primarias",0,3.78,0
+C,20,201,2011,Fabricación de sustancias químicas básicas y biocombustibles,0,0,2.95
+C,20,201,201A,Fabricación de abonos y compuestos de nitrógeno; fabricación de plásticos y de caucho sintético en formas primarias,0,0,0.83
+C,20,202,0,Fabricación de otros productos químicos,0,2.96,0
+C,20,202,2021,Fabricación de pesticidas y de otros productos químicos de uso agropecuario,0,0,0.52
+C,20,202,2022,"Fabricación de pinturas, barnices y productos de revestimiento similares, tintas de imprenta y masillas",0,0,0.98
+C,20,202,2023,"Fabricación de jabones y detergentes, preparados para limpiar y pulir, perfumes y artículos de tocador",0,0,0.86
+C,20,202,2029,Fabricación de otros productos químicos n.c.p.,0,0,0.61
+C,21,0,0,Fabricación de productos farmacéuticos,6.06,0,0
+C,21,210,0,"Fabricación de productos farmacéuticos, sustancias químicas medicinales y de productos botánicos",0,6.06,0
+C,21,210,2100,"Fabricación de productos farmacéuticos, sustancias químicas medicinales y de productos botánicos",0,0,6.06
+C,22,0,0,Fabricación de productos de caucho y plástico,3.42,0,0
+C,22,221,0,Fabricación de productos de caucho,0,0.38,0
+C,22,221,221A,Fabricación de productos de caucho,0,0,0.38
+C,22,222,0,Fabricación de productos de plástico,0,3.04,0
+C,22,222,2220,Fabricación de productos de plástico,0,0,3.04
+C,23,0,0,Fabricación de otros productos minerales no metálicos,2.04,0,0
+C,23,231,0,Fabricación de vidrio y de productos de vidrio,0,0.33,0
+C,23,231,2310,Fabricación de vidrio y de productos de vidrio,0,0,0.33
+C,23,239,0,Fabricación de productos minerales no metálicos n.c.p.,0,1.7,0
+C,23,239,239A,Fabricación de productos refractarios; fabricación de materiales de arcilla para la construcción; fabricación de otros productos de cerámica y porcelana; fabricación de otros productos minerales no metálicos n.c.p.,0,0,0.4
+C,23,239,2394,"Fabricación de cemento, cal y yeso",0,0,0.46
+C,23,239,2395,"Fabricación de artículos de hormigón, de cemento y de yeso",0,0,0.85
+C,24,0,0,Fabricación de metales comunes,1.23,0,0
+C,24,24A,0,Fabricación de metales comunes,0,1.23,0
+C,24,24A,24AA,Fabricación de metales comunes,0,0,1.23
+C,25,0,0,"Fabricación de productos derivados del metal, excepto maquinaria y equipo",2.64,0,0
+C,25,251,0,"Fabricación de productos metálicos para uso estructural, tanques, depósitos y los generadores de vapor",0,1.67,0
+C,25,251,251A,"Fabricación de productos metálicos para uso estructural, tanques, depósitos y los generadores de vapor",0,0,1.67
+C,25,259,0,Fabricación de otros productos elaborados de metal; actividades de trabajo de metales,0,0.97,0
+C,25,259,259A,Fabricación de otros productos elaborados de metal; actividades de trabajo de metales,0,0,0.97
+C,26,0,0,"Fabricación de los productos informáticos, electrónicos y ópticos",0.74,0,0
+C,26,26A,0,"Fabricación de los productos informáticos, electrónicos y ópticos",0,0.74,0
+C,26,26A,26AA,"Fabricación de los productos informáticos, electrónicos y ópticos",0,0,0.74
+C,27,0,0,Fabricación de equipo eléctrico,0.93,0,0
+C,27,27A,0,Fabricación de equipo eléctrico,0,0.93,0
+C,27,27A,27AA,Fabricación de equipo eléctrico,0,0,0.93
+C,28,0,0,Fabricación de la maquinaria y equipo n.c.p.,0.41,0,0
+C,28,28A,0,Fabricación de la maquinaria y equipo n.c.p.,0,0.41,0
+C,28,28A,28AA,Fabricación de la maquinaria y equipo n.c.p.,0,0,0.41
+C,29,0,0,"Fabricación de vehículos automotores, remolques y semiremolques",1.48,0,0
+C,29,29A,0,"Fabricación de vehículos automotores, remolques y semiremolques",0,1.48,0
+C,29,29A,29AA,"Fabricación de vehículos automotores, remolques y semiremolques",0,0,1.48
+C,30,0,0,Fabricación de otros tipos de equipo de transporte,0.2,0,0
+C,30,30A,0,Fabricación de otros tipos de equipo de transporte,0,0.2,0
+C,30,30A,30AA,Fabricación de otros tipos de equipo de transporte,0,0,0.2
+C,31,0,0,Fabricación de muebles,0.9,0,0
+C,31,310,0,Fabricación de muebles,0,0.9,0
+C,31,310,3100,Fabricación de muebles,0,0,0.9
+C,32,0,0,Otras industrias manufactureras,0.55,0,0
+C,32,32A,0,Otras industrias manufactureras,0,0.55,0
+C,32,32A,32AA,Otras industrias manufactureras,0,0,0.55
+C,33,0,0,Reparación e instalación de la maquinaria y equipo,2.16,0,0
+C,33,331,0,"Reparación de productos elaborados de metal, maquinaria y equipos",0,1.76,0
+C,33,331,331A,"Reparación de productos elaborados de metal; reparación de equipo eléctrico; reparación de equipo de transporte, excepto los vehículos automotores",0,0,0.7
+C,33,331,3312,Reparación de maquinaria,0,0,1.05
+C,33,332,0,Instalación de maquinaria y equipo industrial,0,0.4,0
+C,33,332,3320,Instalación de maquinaria y equipo industrial,0,0,0.4
