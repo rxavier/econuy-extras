@@ -26,9 +26,7 @@ jobs:
         with:
           path: /econuy_extras/retrieval/taxes_pdf.csv
       - name: Set environment variable
-        run: echo "GEMINI_API_KEY=$GEMINI_API_KEY" >> $GITHUB_ENV
-        env:
-          MY_SECRET_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> $GITHUB_ENV
       - name: Run script
         run: python econuy_extras/retrieval/get_taxes.py
       - name: Add, commit and push
