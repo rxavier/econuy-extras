@@ -28,8 +28,18 @@ client = OpenAI(
 
 
 def get_pdf_urls(dgi_year_url: str):
-    r = httpx.get(dgi_year_url)
+    try:
+        r = httpx.get(dgi_year_url)
+        r.raise_for_status()
+    except httpx.HTTPStatusError as e:
+        print(f"Error getting {dgi_year_url}: {e}")
+        return {}
+
     urls = re.findall(r"files/[0-9-]+/[A-z0-9%]+\.pdf", r.text)
+
+    if len(urls) == 0:
+        return {}
+
     urls = {url.split("%20")[-1].replace(".pdf", ""): url for url in urls}
 
     months = [
@@ -105,6 +115,11 @@ def build_taxes_data(start_year: int = 2024):
     for year in range(start_year, current_year + 1):
         url = BASE_URL.format(year)
         pdf_urls = get_pdf_urls(url)
+
+        if not pdf_urls:
+            print(f"No PDFs found for year {year}")
+            continue
+
         for month, pdf_url in pdf_urls.items():
             print(f"Processing month {month}")
             r = httpx.get(pdf_url)

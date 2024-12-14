@@ -5,6 +5,7 @@ def read_requirements():
     with open("requirements.txt") as f:
         return f.read().splitlines()
 
+
 packages = find_packages(".", exclude=["*.test", "*.test.*"])
 
 
