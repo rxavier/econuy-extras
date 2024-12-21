@@ -29,7 +29,7 @@ client = OpenAI(
 
 def get_pdf_urls(dgi_year_url: str):
     try:
-        r = httpx.get(dgi_year_url)
+        r = httpx.get(dgi_year_url, timeout=60)
         r.raise_for_status()
     except httpx.HTTPStatusError as e:
         print(f"Error getting {dgi_year_url}: {e}")
