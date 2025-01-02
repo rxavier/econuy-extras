@@ -20,7 +20,7 @@ load_dotenv(".env")
 BASE_URL = "https://www.gub.uy/direccion-general-impositiva/datos-y-estadisticas/estadisticas?field_tematica_gubuy_to_ct_datos=563&field_fecha_by_year_to_ct_datos={}&field_fecha_by_month=All&field_publico_gubuy_to_ct_datos=All"
 PROMPT = """Extract the table from the image. Return a key-value object where the keys are the taxes as defined in the first column,
 and the values are the 'Variación nominal' column (NOT the 'variación real'). Do not include the % symbol with the numbers. Do not translate. Return every row.
-The first element should be 'Impuestos al consumo'  and the last one 'Total neto'. Return only valid JSON that can be parsed directly."""
+The first element should be 'Impuestos al consumo'  and the last one 'Total neto'. Return only valid JSON that can be parsed directly. The values should be floats."""
 
 client = OpenAI(
     api_key=os.environ["GEMINI_API_KEY"],
