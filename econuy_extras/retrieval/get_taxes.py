@@ -2,6 +2,7 @@ import base64
 import os
 import json
 import re
+import time
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from datetime import datetime
@@ -126,7 +127,14 @@ def build_taxes_data(start_year: int = 2024):
             with NamedTemporaryFile(suffix=".pdf", delete=True) as f:
                 f.write(r.content)
                 img_path = last_page_to_image(f.name)
-                data = parse_table(img_path)
+                
+                try:
+                    data = parse_table(img_path)
+                except Exception as exc:
+                    print(f"Failure on {month=} {pdf_url=} | {exc}")
+                    time.sleep(60)
+                    data = parse_table(img_path)
+                    
                 datas[f"{year}-{month}"] = data
 
     output = pd.DataFrame(datas).T
