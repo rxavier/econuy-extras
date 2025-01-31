@@ -111,6 +111,8 @@ def parse_table(img_path: str) -> dict:
 
 def build_taxes_data(start_year: int = 2024):
     current_year = datetime.now().year
+    if datetime.now().month == 1:
+        current_year -= 1
 
     datas = {}
     for year in range(start_year, current_year + 1):
