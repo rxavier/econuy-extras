@@ -57,14 +57,15 @@ def get_pdf_urls(dgi_year_url: str):
         "nov",
         "dic",
     ]
-    month_map = {m: i + 1 for i, m in enumerate(months)}
+    month_map = {m: str(i + 1).zfill(2) for i, m in enumerate(months)}
 
     dgi_base_url = "https://www.gub.uy/direccion-general-impositiva/sites/direccion-general-impositiva"
     final = {}
     for part, url in urls.items():
         for m, i in month_map.items():
             if m in part:
-                final[i] = f"{dgi_base_url}/{url}"
+                year = "20" + url.replace(".pdf", "")[-2:]
+                final[f"{year}-{i}"] = f"{dgi_base_url}/{url}"
                 break
     return final
 
@@ -86,7 +87,7 @@ def encode_image(image_path):
 def parse_table(img_path: str) -> dict:
     base64_image = encode_image(img_path)
     response = client.chat.completions.create(
-        model="gemini-1.5-flash",
+        model="gemini-2.0-flash",
         messages=[
             {
                 "role": "user",
@@ -109,7 +110,7 @@ def parse_table(img_path: str) -> dict:
     return json.loads(data)
 
 
-def build_taxes_data(start_year: int = 2024):
+def build_taxes_data(start_year: int = 2025):
     current_year = datetime.now().year
     if datetime.now().month == 1:
         current_year -= 1
@@ -123,21 +124,21 @@ def build_taxes_data(start_year: int = 2024):
             print(f"No PDFs found for year {year}")
             continue
 
-        for month, pdf_url in pdf_urls.items():
-            print(f"Processing month {month}")
+        for year_month, pdf_url in pdf_urls.items():
+            print(f"Processing month {year_month}")
             r = httpx.get(pdf_url)
             with NamedTemporaryFile(suffix=".pdf", delete=True) as f:
                 f.write(r.content)
                 img_path = last_page_to_image(f.name)
-                
+
                 try:
                     data = parse_table(img_path)
                 except Exception as exc:
-                    print(f"Failure on {month=} {pdf_url=} | {exc}")
+                    print(f"Failure on {year_month=} {pdf_url=} | {exc}")
                     time.sleep(60)
                     data = parse_table(img_path)
-                    
-                datas[f"{year}-{month}"] = data
+
+                datas[year_month] = data
 
     output = pd.DataFrame(datas).T
     output.index = pd.to_datetime(output.index, format="%Y-%m")
