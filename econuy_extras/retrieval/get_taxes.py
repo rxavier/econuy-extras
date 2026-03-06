@@ -87,7 +87,7 @@ def encode_image(image_path):
 def parse_table(img_path: str) -> dict:
     base64_image = encode_image(img_path)
     response = client.chat.completions.create(
-        model="gemini-2.0-flash",
+        model="gemini-3.1-flash-lite-preview",
         messages=[
             {
                 "role": "user",
